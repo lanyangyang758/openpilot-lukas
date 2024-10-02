@@ -409,7 +409,7 @@ EVENTS: dict[int, dict[str, Alert | AlertCallbackType]] = {
     ET.PERMANENT: Alert(
       "BRAKE!",
       "Emergency Braking: Risk of Collision",
-      AlertStatus.critical, AlertSize.none,
+      AlertStatus.normal, AlertSize.none,
       Priority.LOW, VisualAlert.none, AudibleAlert.none, .2),
     ET.NO_ENTRY: NoEntryAlert("AEB: Risk of Collision"),
   },
